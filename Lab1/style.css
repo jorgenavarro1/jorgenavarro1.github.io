@@ -90,6 +90,11 @@ section h2 {
   gap: 5px;
 }
 
+.experience li {
+    border: none
+}
+
+
 .projects a {
   color: lightblue;
   font-weight: bold;
