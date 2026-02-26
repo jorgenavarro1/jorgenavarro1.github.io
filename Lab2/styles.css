@@ -38,11 +38,17 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #flex-section3 .tags ul {
-
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	list-style: none;
+	padding: 0;
 }
 
 /* end Flexbox Part 3 */
