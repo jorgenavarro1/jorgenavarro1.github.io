@@ -54,6 +54,29 @@ function countVowels(word) {
 }
 
 // Demonstration
-console.log("Fancy:", countVowels("Fancy"));
-console.log("Detention:", countVowels("Detention"));
-console.log("Elaborate:", countVowels("Elaborate"));
+console.log("Dance:", countVowels("Dance")+ " vowels.");
+console.log("Detention:", countVowels("Detention")+ " vowels.");
+console.log("Elaborate:", countVowels("Elaborate")+ " vowels.");
+
+
+
+// Exercise #3
+
+function sortNumbers(arr) {
+    let sortedArray = arr.slice(); // copy array
+
+    sortedArray.sort(function(a, b) {
+        return a - b;
+    });
+
+    return sortedArray;
+}
+
+// Test Cases 
+let arr1 = [28, 42, 96, 32];
+let arr2 = [45, 53, 27, 18, 11];
+let arr3 = [105, 54, 23, 87, 12, 71];
+
+console.log("Original Array: [" + arr1 + "] Sorted Array: [" + sortNumbers(arr1) + "]");
+console.log("Original Array: [" + arr2 + "] Sorted Array: [" + sortNumbers(arr2) + "]");
+console.log("Original Array: [" + arr3 + "] Sorted Array: [" + sortNumbers(arr3) + "]");
