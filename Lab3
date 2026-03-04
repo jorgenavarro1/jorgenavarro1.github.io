@@ -25,7 +25,34 @@ function minMaxAverage(arr) {
         ", Average: " + average);
 }
 
-// Test Cases
+// Demonstration
 minMaxAverage([15, 5, 23, 42, 3]);
 minMaxAverage([1, 9, 15, 41, 19, 32]);
 minMaxAverage([27, 18, 25, 11, 29, 31, 45]);
+
+
+// Exercise #2 - Count Vowels
+function countVowels(word) {
+
+    let count = 0;
+    word = word.toLowerCase();
+
+    for (let i = 0; i < word.length; i++) {
+
+        if (word[i] === "a" ||
+            word[i] === "e" ||
+            word[i] === "i" ||
+            word[i] === "o" ||
+            word[i] === "u") {
+
+            count = count + 1;
+        }
+    }
+
+    return count;
+}
+
+// Demonstration
+console.log("Fancy:", countVowels("Fancy"));
+console.log("Detention:", countVowels("Detention"));
+console.log("Elaborate:", countVowels("Elaborate"));
