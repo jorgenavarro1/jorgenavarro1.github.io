@@ -72,7 +72,7 @@ function sortNumbers(arr) {
     return sortedArray;
 }
 
-// Test Cases 
+// Demonstration
 let arr1 = [28, 42, 96, 32];
 let arr2 = [45, 53, 27, 18, 11];
 let arr3 = [105, 54, 23, 87, 12, 71];
@@ -80,3 +80,21 @@ let arr3 = [105, 54, 23, 87, 12, 71];
 console.log("Original Array: [" + arr1 + "] Sorted Array: [" + sortNumbers(arr1) + "]");
 console.log("Original Array: [" + arr2 + "] Sorted Array: [" + sortNumbers(arr2) + "]");
 console.log("Original Array: [" + arr3 + "] Sorted Array: [" + sortNumbers(arr3) + "]");
+
+
+
+// Exercise #4
+
+function celsiusToFahrenheit(celsius) {
+    let fahrenheit = (celsius * 9/5) + 32;
+
+    console.log(
+        celsius.toFixed(1) + " Celsius = " +
+        fahrenheit.toFixed(1) + " Fahrenheit"
+    );
+}
+
+// Demonstration
+celsiusToFahrenheit(57);
+celsiusToFahrenheit(10);
+celsiusToFahrenheit(21);
