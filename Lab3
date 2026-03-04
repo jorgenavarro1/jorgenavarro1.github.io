@@ -24,3 +24,8 @@ function minMaxAverage(arr) {
         ", Max Value: " + max +
         ", Average: " + average);
 }
+
+// Test Cases
+minMaxAverage([15, 5, 23, 42, 3]);
+minMaxAverage([1, 9, 15, 41, 19, 32]);
+minMaxAverage([27, 18, 25, 11, 29, 31, 45]);
