@@ -1,6 +1,7 @@
 // Jorge Navarro
 // ITMD 411-02
 
+// Exercise #1 - minMaxAverage
 function minMaxAverage(arr) {
     let totalNumbers = arr.length;
     let min = arr[0];
