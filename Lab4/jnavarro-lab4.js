@@ -63,4 +63,13 @@
   `;
   document.head.appendChild(style);
 
-  
+// 3b. Change the Musicians image
+  const solutionImages = document.querySelectorAll("#solutions img");
+  solutionImages.forEach((img) => {
+    if (img.alt && img.alt.toLowerCase().includes("musician")) {
+      img.src = "https://picsum.photos/id/453/400/300";
+    }
+  });
+ 
+  console.log("All changes applied successfully.");
+})(); 
