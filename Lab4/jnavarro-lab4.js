@@ -44,3 +44,10 @@
   serviceIcons.forEach((icon) => {
     icon.style.color = "#47C714";
   });
+
+// 2b. Change Icon
+  serviceIcons.forEach((icon) => {
+    if (icon.textContent.trim() === "linked_services") {
+      icon.textContent = "ads_click";
+    }
+  });
