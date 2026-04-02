@@ -32,26 +32,20 @@
     ctaButton.remove();
   }
 
-// 1e. Change navbar AND entire top background color + fix alignment
+// 1e. Change background color of navbar across the top
   const navbar = document.querySelector("nav");
   const footer = document.querySelector("footer");
   const header = document.querySelector("header");
 
   if (navbar && footer) {
     const footerColor = getComputedStyle(footer).backgroundColor;
-
-    // Navbar color
     navbar.style.backgroundColor = footerColor;
-
-    // Fix navbar alignment (inner container)
     const navContainer = navbar.querySelector("div");
     if (navContainer) {
       navContainer.style.margin = "0 auto";
       navContainer.style.maxWidth = "1200px";
       navContainer.style.width = "100%";
     }
-
-    // Entire top area
     if (header) {
       header.style.backgroundColor = footerColor;
     }
