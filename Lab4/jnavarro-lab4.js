@@ -26,8 +26,15 @@
     heroSection.style.backgroundPosition = "center";
   }
 
-  // 1d. Remove the "Get Started" button
+// 1d. Remove the "Get Started" button
   const ctaButton = document.querySelector("section a");
   if (ctaButton) {
     ctaButton.remove();
+  }
+
+// 1e. Change navbar background color
+  const navbar = document.querySelector("nav");
+  const footer = document.querySelector("footer");
+  if (navbar && footer) {
+    navbar.style.backgroundColor = getComputedStyle(footer).backgroundColor;
   }
