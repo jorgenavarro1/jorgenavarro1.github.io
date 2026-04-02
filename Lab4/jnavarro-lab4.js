@@ -51,3 +51,16 @@
       icon.textContent = "ads_click";
     }
   });
+
+// 3a. Change the layout of the tiles
+  const style = document.createElement("style");
+  style.textContent = `
+    @media (min-width: 1024px) {
+      #solutions .grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  
