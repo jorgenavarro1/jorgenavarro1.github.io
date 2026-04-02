@@ -25,3 +25,9 @@
     heroSection.style.backgroundSize = "cover";
     heroSection.style.backgroundPosition = "center";
   }
+
+  // 1d. Remove the "Get Started" button
+  const ctaButton = document.querySelector("section a");
+  if (ctaButton) {
+    ctaButton.remove();
+  }
