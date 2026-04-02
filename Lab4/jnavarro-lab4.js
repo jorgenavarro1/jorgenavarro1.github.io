@@ -38,3 +38,9 @@
   if (navbar && footer) {
     navbar.style.backgroundColor = getComputedStyle(footer).backgroundColor;
   }
+
+// 2a. Change icons color
+  const serviceIcons = document.querySelectorAll(".material-symbols-outlined");
+  serviceIcons.forEach((icon) => {
+    icon.style.color = "#47C714";
+  });
