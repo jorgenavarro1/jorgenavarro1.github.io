@@ -11,10 +11,20 @@
 <h1>Tip Calculator</h1>
 
 <form id="tipForm">
-    
+
     <p>Currency Conversion:</p>
     <p>$1 USD = €0.95 EUR</p>
     <p>$1 USD = ₹85 INR</p>
 
     <label for="billTotal">Bill Total ($):</label>
     <input type="text" id="billTotal">
+    
+    <label for="totalWithTax">Total Bill with Tax (11%):</label>
+    <input type="text" id="totalWithTax" disabled>
+
+    <label for="currency">Select Currency:</label>
+    <select id="currency">
+        <option value="usd">USD</option>
+        <option value="eur">Euro</option>
+        <option value="inr">Rupee</option>
+    </select>
