@@ -47,3 +47,8 @@ form.addEventListener("input", function () {
 
     let convertedTip = tipAmount * rate;
     let convertedFinal = finalTotal * rate;
+
+    totalWithTaxField.value = "$" + totalWithTax.toFixed(2);
+    tipAmountField.value = symbol + convertedTip.toFixed(2);
+    finalTotalField.value = symbol + convertedFinal.toFixed(2);
+});
