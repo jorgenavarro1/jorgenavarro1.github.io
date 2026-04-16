@@ -14,3 +14,16 @@ form.addEventListener("input", function () {
     let tipAmountField = document.getElementById("tipAmount");
     let finalTotalField = document.getElementById("finalTotal");
     let errorMsg = document.getElementById("errorMsg");
+
+    if (isNaN(bill) || bill < 0) {
+        errorMsg.textContent = "Enter a positive dollar amount";
+        clearFields();
+        return;
+    } else {
+        errorMsg.textContent = "";
+    }
+
+    if (bill === 0) {
+        clearFields();
+        return;
+    }
