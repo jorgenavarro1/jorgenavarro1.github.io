@@ -27,3 +27,9 @@ form.addEventListener("input", function () {
         clearFields();
         return;
     }
+
+    let tax = bill * 0.11;
+    let totalWithTax = bill + tax;
+
+    let tipAmount = bill * (tipPercent / 100);
+    let finalTotal = totalWithTax + tipAmount;
