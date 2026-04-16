@@ -44,3 +44,6 @@ form.addEventListener("input", function () {
         rate = 85;
         symbol = "₹";
     }
+
+    let convertedTip = tipAmount * rate;
+    let convertedFinal = finalTotal * rate;
