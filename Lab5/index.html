@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-<h1>Tip Calculator</h1>
-
-<form id="tipForm">
-
-    <p>Currency Conversion:</p>
-    <p>$1 USD = €0.95 EUR</p>
-    <p>$1 USD = ₹85 INR</p>
-
+    <h1>Tip Calculator</h1>
+    <form id="tipForm">
+        <h2>Currency Conversion:</h2>
+        <p>$1 USD = €0.95 for EUROS</p>
+        <p>$1 USD = ₹85 for Rupees</p>
     <label for="billTotal">Bill Total ($):</label>
     <input type="text" id="billTotal">
     
@@ -30,8 +26,9 @@
     </select>
     
     <label for="tipRange">Tip:</label>
-    <input type="range" id="tipRange" min="0" max="100" value="15">
-
+    <input type="range" id="tipRange" min="0" max="100">
+    <span id="tipDisplay">%</span>
+    </div>
     <label for="tipAmount">Converted Tip Amount:</label>
     <input type="text" id="tipAmount" disabled>
 
