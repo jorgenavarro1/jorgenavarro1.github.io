@@ -12,3 +12,29 @@ form {
     border-radius: 10px;
     border: 2px solid rgb(210, 210, 210);
 }
+
+div {
+    display: block; 
+    align-items: center; 
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[disabled] {
+    background: rgb(210, 210, 210);
+}
+
+#errorMsg {
+    color: red;
+}
