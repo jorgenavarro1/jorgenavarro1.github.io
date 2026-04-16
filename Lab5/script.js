@@ -52,3 +52,9 @@ form.addEventListener("input", function () {
     tipAmountField.value = symbol + convertedTip.toFixed(2);
     finalTotalField.value = symbol + convertedFinal.toFixed(2);
 });
+
+function clearFields() {
+    document.getElementById("totalWithTax").value = "";
+    document.getElementById("tipAmount").value = "";
+    document.getElementById("finalTotal").value = "";
+}
