@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: 'Times New Roman';
     background: rgb(210, 210, 210);
     text-align: center;
 }
@@ -8,9 +8,9 @@ form {
     background: white;
     padding: 20px;
     margin: auto;
-    width: 320px;
+    width: 25%;
     border-radius: 10px;
-    border: 2px solid rgb(210, 210, 210);
+    border: solid rgb(210, 210, 210);
 }
 
 div {
