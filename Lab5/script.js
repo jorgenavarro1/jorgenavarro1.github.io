@@ -33,3 +33,14 @@ form.addEventListener("input", function () {
 
     let tipAmount = bill * (tipPercent / 100);
     let finalTotal = totalWithTax + tipAmount;
+
+    let rate = 1;
+    let symbol = "$";
+
+    if (currency === "eur") {
+        rate = 0.95;
+        symbol = "€";
+    } else if (currency === "inr") {
+        rate = 85;
+        symbol = "₹";
+    }
