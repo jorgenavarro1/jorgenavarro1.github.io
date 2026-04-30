@@ -39,3 +39,9 @@ header {
   gap: 10px;
   margin: 25px;
 }
+
+#errorMsg {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
