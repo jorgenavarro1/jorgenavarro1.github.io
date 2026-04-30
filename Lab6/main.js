@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
     const tm = tomorrowData.results;
 
     todayCard.innerHTML = `
-      <h2>Today</h2>
+      <h2>Today:</h2>
       <p>🌅 Sunrise: ${t.sunrise}</p>
       <p>🌇 Sunset: ${t.sunset}</p>
       <p>🌄 Dawn: ${t.dawn}</p>
@@ -51,7 +51,7 @@ btn.addEventListener("click", () => {
     `;
 
     tomorrowCard.innerHTML = `
-      <h2>Tomorrow</h2>
+      <h2>Tomorrow:</h2>
       <p>🌅 Sunrise: ${tm.sunrise}</p>
       <p>🌇 Sunset: ${tm.sunset}</p>
       <p>🌄 Dawn: ${tm.dawn}</p>
