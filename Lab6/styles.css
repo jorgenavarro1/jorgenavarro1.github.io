@@ -62,3 +62,15 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   min-height: 100px;
 }
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+  font-size: 26px;
+}
+
+.card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
