@@ -58,14 +58,14 @@ header {
   background: white;
   padding: 35px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 10px rgba(221, 66, 0, 0.12);
   min-height: 100px;
 }
 
 .card h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #2c2c2c;
+  color: #000000;
   font-size: 26px;
   text-align: center;
   text-decoration: underline;
