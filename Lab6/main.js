@@ -16,3 +16,13 @@ btn.addEventListener("click", () => {
   }
 
   const [lat, lng] = value.split(",");
+
+  const today = new Date();
+  const todayStr = today.toISOString().split("T")[0];
+
+  const tomorrow = new Date();
+  tomorrow.setDate(today.getDate() + 1);
+  const tomorrowStr = tomorrow.toISOString().split("T")[0];
+
+  const urlToday = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=${todayStr}`;
+  const urlTomorrow = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=${tomorrowStr}`;
