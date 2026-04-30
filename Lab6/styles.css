@@ -68,6 +68,8 @@ header {
   margin-bottom: 20px;
   color: #2c2c2c;
   font-size: 26px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .card p {
@@ -79,6 +81,7 @@ header {
   text-align: center;
   padding: 15px;
   font-size: 16px;
+  text-decoration: underline;
 }
 
 footer {
