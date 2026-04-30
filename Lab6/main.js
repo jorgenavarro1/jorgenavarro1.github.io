@@ -26,3 +26,26 @@ btn.addEventListener("click", () => {
 
   const urlToday = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=${todayStr}`;
   const urlTomorrow = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=${tomorrowStr}`;
+
+  Promise.all([
+    fetch(urlToday).then(res => res.json()),
+    fetch(urlTomorrow).then(res => res.json())
+  ])
+  .then(([todayData, tomorrowData]) => {
+
+    if (todayData.status !== "OK" || tomorrowData.status !== "OK") {
+      throw new Error("API error");
+    }
+
+    const t = todayData.results;
+    const tm = tomorrowData.results;
+
+    todayCard.innerHTML = `
+      <h2>Today</h2>
+      <p>🌅 Sunrise: ${t.sunrise}</p>
+      <p>🌇 Sunset: ${t.sunset}</p>
+      <p>🌄 Dawn: ${t.dawn}</p>
+      <p>🌃 Dusk: ${t.dusk}</p>
+      <p>⏳ Day Length: ${t.day_length}</p>
+      <p>🕛 Solar Noon: ${t.solar_noon}</p>
+    `;
