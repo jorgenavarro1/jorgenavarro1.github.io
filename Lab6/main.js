@@ -59,3 +59,11 @@ btn.addEventListener("click", () => {
       <p>⏳ Day Length: ${tm.day_length}</p>
       <p>🕛 Solar Noon: ${tm.solar_noon}</p>
     `;
+
+    timezoneDisplay.textContent = `Timezone: ${t.timezone}`;
+  })
+  .catch(err => {
+    errorMsg.textContent = "Error fetching data. Try again.";
+    console.error(err);
+  });
+});
