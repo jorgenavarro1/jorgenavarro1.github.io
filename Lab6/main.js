@@ -1,4 +1,4 @@
-const btn = document.getElementById("getDataBtn");
+const btn = document.getElementById("findTimesBtn");
 const select = document.getElementById("locationSelect");
 const todayCard = document.getElementById("todayCard");
 const tomorrowCard = document.getElementById("tomorrowCard");
