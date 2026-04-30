@@ -49,3 +49,13 @@ btn.addEventListener("click", () => {
       <p>⏳ Day Length: ${t.day_length}</p>
       <p>🕛 Solar Noon: ${t.solar_noon}</p>
     `;
+
+    tomorrowCard.innerHTML = `
+      <h2>Tomorrow</h2>
+      <p>🌅 Sunrise: ${tm.sunrise}</p>
+      <p>🌇 Sunset: ${tm.sunset}</p>
+      <p>🌄 Dawn: ${tm.dawn}</p>
+      <p>🌃 Dusk: ${tm.dusk}</p>
+      <p>⏳ Day Length: ${tm.day_length}</p>
+      <p>🕛 Solar Noon: ${tm.solar_noon}</p>
+    `;
