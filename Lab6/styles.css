@@ -9,3 +9,15 @@ html, body {
 header {
     background-image: url(images/sunset.jpg);
 }
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 70px 20px;
+  color: rgb(230, 230, 230);
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url("images/sunset.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
